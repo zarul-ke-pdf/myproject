@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Finder Feedback</title>
+    <link rel="stylesheet" href="crud.css"> <!-- Link to the CSS -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Beauty Finder</h1>
+        <nav>
+            <button class="home-button" onclick="location.href='index.html'">Go to Home</button>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Beauty Finder Feedback</h1>
+        
+        <label for="feedbackName">Feedback Name:</label>
+        <input type="text" id="feedbackName" placeholder="Enter feedback name">
+        
+        <label for="feedbackContents">Feedback Content:</label>
+        <textarea id="feedbackContents" placeholder="Enter feedback content"></textarea>
+        
+        <button id="btnCreate">Create Feedback</button>
+        <button id="btnRead">Read Feedback</button>
+        <button id="btnUpdate">Update Feedback</button>
+        <button id="btnDelete">Delete Feedback</button>
+
+        <h2>Feedback List</h2>
+        <ul id="feedbackList"></ul>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Beauty Finder © 2024. All rights reserved.</p>
+    </footer>
+
+    <script src="crud.js"></script>
+</body>
+</html>

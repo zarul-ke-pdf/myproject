@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Finder</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Beauty Zarul's Finder</h1>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="beauty_input" placeholder="Enter brand name">
+            <button onclick="buttonClicked()">Search Products</button>
+            <a href="wishlist.html"><button>View Wishlist</button></a>
+            <a href="crud.html"><button>feedback</button></a>
+        </div>
+
+        <div class="recommendation-container">
+            <h2>Get Recommendations</h2>
+            <select id="brandFilter">
+                <option value="">All Brands</option>
+                <option value="almay">Almay</option>
+                <option value="anna sui">Anna Sui</option>
+                <option value="annabelle">Annabelle</option>
+                <option value="cargo cosmetics">Cargo Cosmetics</option>
+                <option value="clinique">Clinique</option>
+                <option value="covergirl">Covergirl</option> 
+                <option value="dr. hauschka">Dr. Hauschka</option>
+                <option value="e.l.f.">E.L.F.</option>
+                <option value="l'oreal">L'Oreal</option>
+                <option value="marcelle">Marcelle</option>
+                <option value="maybelline">Maybelline</option>
+                <option value="milani">Milani</option>
+                <option value="mineral fusion">Mineral Fusion</option>
+                <option value="nyx">NYX</option>
+                <option value="pacifica">Pacifica</option>
+                <option value="physicians formula">Physicians Formula</option>
+                <option value="pure anada">Pure Anada</option> 
+                <option value="revlon">Revlon</option>
+                <option value="smashbox">Smashbox</option>
+                <option value="wet n wild">Wet N Wild</option>
+            </select>
+            <input type="number" id="min_price" placeholder="Min Price">
+            <input type="number" id="max_price" placeholder="Max Price">
+            <button onclick="getRecommendations()">Get Recommendations</button>
+        </div>
+<br><br>
+        <section class="product-display" id="productContainer">
+            <!-- Product details will be injected here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Beauty Finder © 2024. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

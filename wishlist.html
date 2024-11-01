@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Product Wishlist</title>
+    <link rel="stylesheet" href="wish.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+
+<div class="container">
+    <h1>Beauty Product Wishlist</h1>
+
+    <!-- Product Search Section -->
+    <div class="products-section">
+        <h2>Find Products</h2>
+        <input type="text" id="beauty_input" placeholder="Enter a beauty brand (e.g., maybelline)">
+        <button onclick="buttonClicked()">Search</button>
+        
+
+        <div id="productContainer">
+            <!-- Product details will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Wishlist Section -->
+    <div class="wishlist-section">
+        <h2>Your Wishlist</h2>
+
+        <div id="wishlistItems">
+            
+            <button onclick="deleteFromWishlist('${item.id}')">Remove</button>
+
+            <!-- Wishlist items will be displayed here -->
+        </div>
+    </div>
+</div>
+
+<!-- Button to go back to the home page -->
+<button class="home-button" onclick="location.href='index.html'">Go to Home</button>
+
+<script src="wishlist.js"></script>
+</body>
+</html>
